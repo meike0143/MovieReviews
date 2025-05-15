@@ -2,7 +2,7 @@
     <div class="p-6 text-gray-900">
         <div class="sm:items-center">
             <a class="font-semibold text-l text-gray-800" href="{{ route('movies.show', $movie) }}">
-                {{ $movie->name }}
+                {{ $movie->title }}
             </a>
         </div>
     </div>

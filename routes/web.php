@@ -15,7 +15,7 @@ Route::get('/movies/create', [MovieController::class, 'create'])
 Route::post('/movies', [MovieController::class, 'store'])
     ->middleware('auth')->name('movies.store');
 Route::get('/movies/{movie}', [MovieController::class, 'show'])->name('movies.show');
-Route::get('/movies/{moviey}/edit', [MovieController::class, 'edit'])
+Route::get('/movies/{movie}/edit', [MovieController::class, 'edit'])
     ->middleware('auth')->name('movies.edit');
 Route::patch('/movies/{movie}', [MovieController::class, 'update'])
     ->middleware('auth')->name('movies.update');

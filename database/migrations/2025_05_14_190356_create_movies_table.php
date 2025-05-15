@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
-            $table->string('year_of_release')->nullable();
             $table->longText('description');
             $table->integer('rating');
             $table->timestamps();

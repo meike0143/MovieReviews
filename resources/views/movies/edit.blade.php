@@ -24,12 +24,6 @@
                             <x-input-error class="mt-2" :messages="$errors->get('slug')" />
                         </div>
                         <div class="p-2">
-                            <x-input-label for="year_of_publication" :value="old('year_of_publication', $movie)" />
-                            <x-text-input id="slug" name="year_of_publication" type="date" class="mt-1 block w-full" :value="old('year_of_publication')"
-                                          required autofocus autocomplete="year_of_publication" placeholder="Enter the movie's year of publication" />
-                            <x-input-error class="mt-2" :messages="$errors->get('year_of_publication')" />
-                        </div>
-                        <div class="p-2">
                             <x-input-label for="description" :value="__('Description')" />
                             <x-movie.text-area name="description" rows="5" class="mt-1 block w-full border-gray-300 focus:border-indigo-500
                                             focus:ring-indigo-500 rounded-md shadow-sm"

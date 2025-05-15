@@ -34,12 +34,11 @@ class MovieController extends Controller
         $validated = $request->validate([
             'title' => 'required',
             'slug' => 'required',
-            'year_of_release' => 'required',
             'description' => 'required',
             'rating' => 'required',
         ]);
         // Create a new Movie model object
-        $journey = Movie::create($validated);
+        $movie = Movie::create($validated);
         // Redirect to the movies index page
         return redirect()->route('movies.index');
     }
@@ -73,7 +72,6 @@ class MovieController extends Controller
         $validated = $request->validate([
             'title' => 'required',
             'slug' => 'required',
-            'year_of_release' => 'required',
             'description' => 'required',
             'rating' => 'required',
         ]);
@@ -100,7 +98,7 @@ class MovieController extends Controller
     {
         $movie->delete();
         // Redirect to the movies index page
-        return redirect()->route('movie.index')
+        return redirect()->route('movies.index')
             ->with('success', 'Movie successfully deleted');
     }
 }

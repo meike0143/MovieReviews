@@ -32,8 +32,6 @@
                         @else
                             <span class="bg-red-100 text-red-800 text-xs font-medium mx-2 me-2 px-2.5 py-0.5 rounded-full">1 star</span>
                         @endif
-                        <br>
-                        Country: <span class="bg-gray-200 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">{!! $journey->country !!}</span>
                     </p>
                 </div>
             </div>
