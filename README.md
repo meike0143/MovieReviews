@@ -3,12 +3,12 @@
 This app contains the following features:
 
 * Register/login functionalities
-* Journey CRUD Module:
-  * View a list of existing Journeys
-  * Create a new journey **(requires an account)**
-  * View existing journeys
-  * Edit existing journeys **(requires an account)**
-  * Delete existing journeys **(requires an account)**
+* Movie CRUD Module:
+  * View a list of existing movie reviews
+  * Create a new movie review **(requires an account)**
+  * View existing movie reviews
+  * Edit existing movie reviews **(requires an account)**
+  * Delete existing movie reviews **(requires an account)**
 
 ## Authors
 * **Meike Martens** - *Development* - [meike0143](https://github.com/meike0143)
